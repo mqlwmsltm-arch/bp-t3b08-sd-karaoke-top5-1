@@ -1,289 +1,286 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-neon-void">
-    <meta name="description" content="신도림 가라오케 TOP5 완벽 정리. 24시, 최신식 기계, 인테리어까지. 형아가 직접 돌아다니며 느낀 리얼 후기들만 모음">
-    <meta name="keywords" content="신도림 가라오케, 신도림 노래방, 신도림 가라오케 TOP5, 신도림 코인노래방, 신도림 24시 노래방, 신도림 노래방 후기">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://sindorim-song-info.namanavi.com/blog.html">
-    <meta property="og:title" content="신도림 가라오케 TOP5 - 형아가 직접 가본 썰">
-    <meta property="og:description" content="신도림 가라오케 TOP5 완벽 정리. 24시, 최신식 기계, 인테리어까지. 형아가 직접 돌아다니며 느낀 리얼 후기들만 모음">
-    <title>신도림 가라오케 TOP5 - 형아가 직접 가본 썰</title>
-    <style>
-        *, *::before, *::after {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        html {
-            scroll-behavior: smooth;
-            background: #0b0b0e;
-        }
-        body {
-            font-family: 'Inter', 'Pretendard', system-ui, sans-serif;
-            background: #0b0b0e;
-            color: #eaeaea;
-            line-height: 1.6;
-            padding: 0 20px;
-        }
-        h1, h2, h3, h4, h5, h6 {
-            font-weight: 700;
-            letter-spacing: -0.02em;
-            color: #f0f0f0;
-        }
-        h1 {
-            font-size: 2.8rem;
-            border-left: 10px solid #ff0055;
-            padding-left: 20px;
-            margin: 40px 0 20px;
-            text-transform: uppercase;
-            word-break: break-word;
-        }
-        h2 {
-            font-size: 2rem;
-            border-bottom: 3px solid #00f0ff;
-            padding-bottom: 8px;
-            margin: 48px 0 20px;
-        }
-        h3 {
-            font-size: 1.5rem;
-            margin: 32px 0 12px;
-            color: #ffb347;
-        }
-        a {
-            color: #ffb347;
-            text-decoration: none;
-            border-bottom: 2px solid transparent;
-            transition: 0.2s;
-        }
-        a:hover {
-            border-bottom-color: #ff0055;
-            color: #ff0055;
-        }
-        p {
-            margin: 1.2rem 0;
-            color: #ccc;
-            font-size: 1.1rem;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 30px 0;
-            border: 3px solid #2a2a30;
-            filter: contrast(1.1) brightness(0.9);
-        }
-        ul {
-            list-style: none;
-            margin: 20px 0;
-        }
-        li {
-            padding: 10px 0 10px 28px;
-            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="%23ff0055"><circle cx="12" cy="12" r="8"/></svg>') left center no-repeat;
-            background-size: 16px;
-            margin-bottom: 6px;
-            border-bottom: 1px dashed #2a2a35;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px 10px;
-        }
-        /* header */
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 0;
-            border-bottom: 4px solid #ff0055;
-            flex-wrap: wrap;
-        }
-        .logo {
-            font-size: 2rem;
-            font-weight: 800;
-            background: #ff0055;
-            color: #0b0b0e;
-            padding: 8px 20px;
-            text-transform: uppercase;
-            letter-spacing: -1px;
-            border: 4px solid #f0f0f0;
-            transition: 0.2s;
-            text-decoration: none;
-        }
-        .logo:hover {
-            background: #00f0ff;
-            color: #0b0b0e;
-            border-color: #ff0055;
-        }
-        nav ul {
-            display: flex;
-            gap: 2rem;
-            flex-wrap: wrap;
-            list-style: none;
-            background: transparent;
-        }
-        nav a {
-            color: #eaeaea;
-            font-weight: 600;
-            font-size: 1.1rem;
-            padding: 8px 4px;
-            border-bottom: 3px solid transparent;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        nav a:hover {
-            border-bottom-color: #00f0ff;
-            color: #00f0ff;
-        }
-        /* 모바일 대응 */
-        @media (max-width: 768px) {
-            header {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            nav ul {
-                margin-top: 20px;
-                gap: 1.2rem;
-            }
-            h1 {
-                font-size: 2rem;
-            }
-            body {
-                padding: 0 12px;
-            }
-        }
-        /* 추가 블로그 전용 스타일 (클래스 재사용) */
-        .blog-post {
-            background: #121218;
-            padding: 30px 30px 40px;
-            border: 2px solid #2a2a35;
-            margin: 40px 0;
-        }
-        .blog-post .meta {
-            color: #888;
-            font-size: 0.9rem;
-            border-left: 4px solid #ff0055;
-            padding-left: 12px;
-            margin-bottom: 30px;
-        }
-        .blog-post blockquote {
-            border-left: 6px solid #ffb347;
-            background: #1c1c24;
-            padding: 20px 24px;
-            margin: 30px 0;
-            font-style: italic;
-            color: #ddd;
-        }
-        .blog-post .highlight-box {
-            background: #1e1e28;
-            border: 2px solid #00f0ff;
-            padding: 24px;
-            margin: 30px 0;
-            font-weight: 500;
-        }
-        .blog-post .tel-link {
-            display: inline-block;
-            background: #ff0055;
-            color: #0b0b0e;
-            font-weight: 700;
-            padding: 12px 32px;
-            border: 3px solid white;
-            font-size: 1.3rem;
-            margin: 20px 0 10px;
-            transition: 0.2s;
-            text-decoration: none;
-        }
-        .blog-post .tel-link:hover {
-            background: #00f0ff;
-            border-color: #ff0055;
-            color: #000;
-        }
-        /* 푸터 흉내 */
-        .footnote {
-            margin: 60px 0 30px;
-            padding-top: 20px;
-            border-top: 2px dashed #2a2a35;
-            color: #666;
-            text-align: center;
-        }
-    </style>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="description" content="신도림 가라오케 TOP5 완벽 정리. 24시, 최신식 기계, 인테리어까지. 형아가 직접 돌아다니며 느낀 리얼 후기들만 모음">
+ <meta name="keywords" content="신도림 가라오케, 신도림 노래방, 신도림 가라오케 TOP5, 신도림 코인노래방, 신도림 24시 노래방, 신도림 노래방 후기">
+ <meta name="robots" content="index, follow">
+ <link rel="canonical" href="https://sindorim-song-info.namanavi.com/blog.html">
+ <meta property="og:title" content="신도림 가라오케 TOP5 - 형아가 직접 가본 썰">
+ <meta property="og:description" content="신도림 가라오케 TOP5 완벽 정리. 24시, 최신식 기계, 인테리어까지. 형아가 직접 돌아다니며 느낀 리얼 후기들만 모음">
+ <title>신도림 가라오케 TOP5 - 형아가 직접 가본 썰</title>
+ <style>
+ *, *::before, *::after {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+ html {
+ scroll-behavior: smooth;
+ background: #0b0b0e;
+ }
+ body {
+ font-family: 'Inter', 'Pretendard', system-ui, sans-serif;
+ background: #0b0b0e;
+ color: #eaeaea;
+ line-height: 1.6;
+ padding: 0 20px;
+ }
+ h1, h2, h3, h4, h5, h6 {
+ font-weight: 700;
+ letter-spacing: -0.02em;
+ color: #f0f0f0;
+ }
+ h1 {
+ font-size: 2.8rem;
+ border-left: 10px solid #ff0055;
+ padding-left: 20px;
+ margin: 40px 0 20px;
+ text-transform: uppercase;
+ word-break: break-word;
+ }
+ h2 {
+ font-size: 2rem;
+ border-bottom: 3px solid #00f0ff;
+ padding-bottom: 8px;
+ margin: 48px 0 20px;
+ }
+ h3 {
+ font-size: 1.5rem;
+ margin: 32px 0 12px;
+ color: #ffb347;
+ }
+ a {
+ color: #ffb347;
+ text-decoration: none;
+ border-bottom: 2px solid transparent;
+ transition: 0.2s;
+ }
+ a:hover {
+ border-bottom-color: #ff0055;
+ color: #ff0055;
+ }
+ p {
+ margin: 1.2rem 0;
+ color: #ccc;
+ font-size: 1.1rem;
+ }
+ img {
+ max-width: 100%;
+ height: auto;
+ display: block;
+ margin: 30px 0;
+ border: 3px solid #2a2a30;
+ filter: contrast(1.1) brightness(0.9);
+ }
+ ul {
+ list-style: none;
+ margin: 20px 0;
+ }
+ li {
+ padding: 10px 0 10px 28px;
+ background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="%23ff0055"><circle cx="12" cy="12" r="8"/></svg>') left center no-repeat;
+ background-size: 16px;
+ margin-bottom: 6px;
+ border-bottom: 1px dashed #2a2a35;
+ }
+ .container {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 20px 10px;
+ }
+ /* header */
+ header {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 20px 0;
+ border-bottom: 4px solid #ff0055;
+ flex-wrap: wrap;
+ }
+ .logo {
+ font-size: 2rem;
+ font-weight: 800;
+ background: #ff0055;
+ color: #0b0b0e;
+ padding: 8px 20px;
+ text-transform: uppercase;
+ letter-spacing: -1px;
+ border: 4px solid #f0f0f0;
+ transition: 0.2s;
+ text-decoration: none;
+ }
+ .logo:hover {
+ background: #00f0ff;
+ color: #0b0b0e;
+ border-color: #ff0055;
+ }
+ nav ul {
+ display: flex;
+ gap: 2rem;
+ flex-wrap: wrap;
+ list-style: none;
+ background: transparent;
+ }
+ nav a {
+ color: #eaeaea;
+ font-weight: 600;
+ font-size: 1.1rem;
+ padding: 8px 4px;
+ border-bottom: 3px solid transparent;
+ text-transform: uppercase;
+ letter-spacing: 1px;
+ }
+ nav a:hover {
+ border-bottom-color: #00f0ff;
+ color: #00f0ff;
+ }
+ /* 모바일 대응 */
+ @media (max-width: 768px) {
+ header {
+ flex-direction: column;
+ align-items: flex-start;
+ }
+ nav ul {
+ margin-top: 20px;
+ gap: 1.2rem;
+ }
+ h1 {
+ font-size: 2rem;
+ }
+ body {
+ padding: 0 12px;
+ }
+ }
+ /* 추가 블로그 전용 스타일 (클래스 재사용) */
+ .blog-post {
+ background: #121218;
+ padding: 30px 30px 40px;
+ border: 2px solid #2a2a35;
+ margin: 40px 0;
+ }
+ .blog-post .meta {
+ color: #888;
+ font-size: 0.9rem;
+ border-left: 4px solid #ff0055;
+ padding-left: 12px;
+ margin-bottom: 30px;
+ }
+ .blog-post blockquote {
+ border-left: 6px solid #ffb347;
+ background: #1c1c24;
+ padding: 20px 24px;
+ margin: 30px 0;
+ font-style: italic;
+ color: #ddd;
+ }
+ .blog-post .highlight-box {
+ background: #1e1e28;
+ border: 2px solid #00f0ff;
+ padding: 24px;
+ margin: 30px 0;
+ font-weight: 500;
+ }
+ .blog-post .tel-link {
+ display: inline-block;
+ background: #ff0055;
+ color: #0b0b0e;
+ font-weight: 700;
+ padding: 12px 32px;
+ border: 3px solid white;
+ font-size: 1.3rem;
+ margin: 20px 0 10px;
+ transition: 0.2s;
+ text-decoration: none;
+ }
+ .blog-post .tel-link:hover {
+ background: #00f0ff;
+ border-color: #ff0055;
+ color: #000;
+ }
+ /* 푸터 흉내 */
+ .footnote {
+ margin: 60px 0 30px;
+ padding-top: 20px;
+ border-top: 2px dashed #2a2a35;
+ color: #666;
+ text-align: center;
+ }
+ </style>
   <meta property="og:url" content="https://sindorim-song-info.namanavi.com/blog.html">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <a href="/" class="logo">신도림K5</a>
-            <nav>
-                <ul>
-                    <li><a href="/">홈</a></li>
-                    <li><a href="/list">TOP5</a></li>
-                    <li><a href="/blog">블로그</a></li>
-                    <li><a href="/contact">문의</a></li>
-                </ul>
-            </nav>
-        </header>
+ <div class="container">
+ <header>
+ <a href="/" class="logo">신도림K5</a>
+ <nav>
+ <ul>
+ <li><a href="/">홈</a></li>
+ <li><a href="/list">TOP5</a></li>
+ <li><a href="/blog">블로그</a></li>
+ <li><a href="/contact">문의</a></li>
+ </ul>
+ </nav>
+ </header>
 
-        <main>
-            <h1>🎤 신도림 가라오케 TOP5 찐 후기 · 형이 직접 가본 썰</h1>
-            <div class="blog-post">
-                <div class="meta">📅 2025.04.02 · ✍️ 신도림 밤샘러 형아 · 🎙️ 13,000회 감상</div>
+ <main>
+ <h1>🎤 신도림 가라오케 TOP5 찐 후기 · 형이 직접 가본 썰</h1>
+ <div class="blog-post">
+ <div class="meta">📅 2025.04.02 · ✍️ 신도림 밤샘러 형아 · 🎙️ 13,000회 감상</div>
 
-                <p>야, 나는 원래 코인노래방만 돌던 사람이야. 근데 지난주에 친구들이 "신도림 가라오케 TOP5 중에 한번 가보자" 해서 <strong>진짜 다 돌아봤음</strong>. 24시, 기계, 인테리어, 분위기, 가격까지 내 기준으로 싹 정리해봤다. 참고로 나는 감성보다는 <strong>기계빨 + 마이크 성능</strong>을 제일 중요하게 봄. (목 터지는 거 싫어함)</p>
+ <p>야, 나는 원래 코인노래방만 돌던 사람이야. 근데 지난주에 친구들이 "신도림 가라오케 TOP5 중에 한번 가보자" 해서 <strong>진짜 다 돌아봤음</strong>. 24시, 기계, 인테리어, 분위기, 가격까지 내 기준으로 싹 정리해봤다. 참고로 나는 감성보다는 <strong>기계빨 + 마이크 성능</strong>을 제일 중요하게 봄. (목 터지는 거 싫어함)</p>
 
-                <h2>🔞 내가 직접 발로 뛰어본 5곳</h2>
-                <p>신도림역 1번 출구부터 4번 출구까지, 그리고 테크노마트 주변까지. 밤 10시부터 새벽 4시까지 돌아다니며 한 곳당 40분 이상 불렀다. (목 상태는 사망) 결과적으로 <strong>TOP5 리스트는 진짜 거짓말 안 보탬</strong>.</p>
+ <h2>🔞 내가 직접 발로 뛰어본 5곳</h2>
+ <p>신도림역 1번 출구부터 4번 출구까지, 그리고 테크노마트 주변까지. 밤 10시부터 새벽 4시까지 돌아다니며 한 곳당 40분 이상 불렀다. (목 상태는 사망) 결과적으로 <strong>TOP5 리스트는 진짜 거짓말 안 보탬</strong>.</p>
 
-                <blockquote>
-                    “퍼펙트 가라오케는 진짜 달라. 마이크가 너무 가볍고 울림이 깨끗해. 게다가 24시라서 새벽 3시에 가도 노래방 켜짐. 형, 여기 강추.”
-                </blockquote>
+ <blockquote>
+ “퍼펙트 가라오케는 진짜 달라. 마이크가 너무 가볍고 울림이 깨끗해. 게다가 24시라서 새벽 3시에 가도 노래방 켜짐. 형, 여기 강추.”
+ </blockquote>
 
-                <h3>🥇 1위: 퍼펙트 가라오케 (신도림 중앙)</h3>
-                <p>여기는 진짜 <strong>인테리어부터 다름</strong>. 블랙 & 네온 조명, 약간 클럽 느낌. 기계는 TJ미디어 최신식. 리모컨도 반응 속도 미침. 2시간 기본에 음료 서비스. 가격은 2만원 후반대 (주말 약간 추가). <strong>단점: 자리가 6개뿐이라 예약 필수</strong>. 나는 웨이팅 20분 하고 들어갔는데, 기다린 보람 있음.</p>
+ <h3>🥇 1위: 퍼펙트 가라오케 (신도림 중앙)</h3>
+ <p>여기는 진짜 <strong>인테리어부터 다름</strong>. 블랙 & 네온 조명, 약간 클럽 느낌. 기계는 TJ미디어 최신식. 리모컨도 반응 속도 미침. 2시간 기본에 음료 서비스. 가격은 2만원 후반대 (주말 약간 추가). <strong>단점: 자리가 6개뿐이라 예약 필수</strong>. 나는 웨이팅 20분 하고 들어갔는데, 기다린 보람 있음.</p>
 
-                <h3>🥈 2위: 루나 가라오케 (테크노마트 쪽)</h3>
-                <p>24시는 아니지만 (새벽 1시까지) 방이 엄청 넓음. 10명 이상도 문제없음. 기계는 금영 최신. 거기에 <strong>마이크 에코가 찰짐</strong>. 단, 주차가 어려움. 나는 지하철 타고 감. 가격은 3만원 초반대.</p>
+ <h3>🥈 2위: 루나 가라오케 (테크노마트 쪽)</h3>
+ <p>24시는 아니지만 (새벽 1시까지) 방이 엄청 넓음. 10명 이상도 문제없음. 기계는 금영 최신. 거기에 <strong>마이크 에코가 찰짐</strong>. 단, 주차가 어려움. 나는 지하철 타고 감. 가격은 3만원 초반대.</p>
 
-                <h3>🥉 3위: 보컬라운지 비 (신도림역 3번 출구)</h3>
-                <p>여기는 콘셉트가 독특함. <strong>감성적인 무드등 + LP 인테리어</strong>. 발라드 부르기 좋음. 근데 댄스곡은 살짝 아쉬움. 스피커가 부드러운 편. 24시 운영. 가격은 2만원 중반. 연인들이 많이 옴.</p>
+ <h3>🥉 3위: 보컬라운지 비 (신도림역 3번 출구)</h3>
+ <p>여기는 콘셉트가 독특함. <strong>감성적인 무드등 + LP 인테리어</strong>. 발라드 부르기 좋음. 근데 댄스곡은 살짝 아쉬움. 스피커가 부드러운 편. 24시 운영. 가격은 2만원 중반. 연인들이 많이 옴.</p>
 
-                <h3>4위: 코인노래방 존 (신도림 대로변)</h3>
-                <p>가성비 end. 1곡에 500원. 근데 기계가 오래된 곳도 있음. 나는 2호점 추천. 24시. 혼자 가기 좋음. <strong>근데 TOP5라고 하기엔 시설이 아쉬움</strong>. 그래도 가격이 착해서 4위 줌.</p>
+ <h3>4위: 코인노래방 존 (신도림 대로변)</h3>
+ <p>가성비 end. 1곡에 500원. 근데 기계가 오래된 곳도 있음. 나는 2호점 추천. 24시. 혼자 가기 좋음. <strong>근데 TOP5라고 하기엔 시설이 아쉬움</strong>. 그래도 가격이 착해서 4위 줌.</p>
 
-                <h3>5위: 플래티넘 노래방 (신도림 남쪽)</h3>
-                <p>여기는 방음이 진짜 좋음. 옆방 소리 안 들림. 기계는 TJ. 24시. 단점은 조금 외진 위치. 가격은 3만원대. <strong>단체로 가면 좋음</strong>. 나는 친구 8명이서 갔는데 난리 쳐도 혼남.</p>
+ <h3>5위: 플래티넘 노래방 (신도림 남쪽)</h3>
+ <p>여기는 방음이 진짜 좋음. 옆방 소리 안 들림. 기계는 TJ. 24시. 단점은 조금 외진 위치. 가격은 3만원대. <strong>단체로 가면 좋음</strong>. 나는 친구 8명이서 갔는데 난리 쳐도 혼남.</p>
 
-                <div class="highlight-box">
-                    💡 <strong>형의 원픽:</strong> 퍼펙트 가라오케. 마이크 성능, 인테리어, 24시 운영, 가격까지 밸런스 end. 전화로 예약하고 가라. (02-1234-5678)
-                </div>
+ <div class="highlight-box">
+ 💡 <strong>형의 원픽:</strong>퍼펙트 가라오케. 마이크 성능, 인테리어, 24시 운영, 가격까지 밸런스 end. 전화로 예약하고 가라.</div>
 
-                <p>그리고 팁 하나 알려줌. 신도림 가라오케 갈 때 <strong>네이버 예약 어플</strong>로 미리 확인하면 웨이팅 줄일 수 있음. 나는 퍼펙트 갈 때 네이버로 예약하고 갔는데 5분 만에 입장. 근데 전화 예약이 더 확실함.</p>
+ <p>그리고 팁 하나 알려줌. 신도림 가라오케 갈 때 <strong>네이버 예약 어플</strong>로 미리 확인하면 웨이팅 줄일 수 있음. 나는 퍼펙트 갈 때 네이버로 예약하고 갔는데 5분 만에 입장. 근데 전화 예약이 더 확실함.</p>
 
-                <p>자, 여기까지 <strong>신도림 가라오케 TOP5 찐 후기</strong>였음. 내가 발품 팔아서 적은 거니까 믿어도 됨. 다들 신도림에서 밤샘 노래방 즐기고, 다음날 후회하지 않을 정도로만 불러. (목 관리 필수) 궁금한 거 있으면 댓글 달아라. 형이 다 알려줌.</p>
+ <p>자, 여기까지 <strong>신도림 가라오케 TOP5 찐 후기</strong>였음. 내가 발품 팔아서 적은 거니까 믿어도 됨. 다들 신도림에서 밤샘 노래방 즐기고, 다음날 후회하지 않을 정도로만 불러. (목 관리 필수) 궁금한 거 있으면 댓글 달아라. 형이 다 알려줌.</p>
 
-                <a href="tel:021234567" class="tel-link">📞 퍼펙트 예약: 02-123-4567</a>
-                <p style="margin-top: 8px; color: #999;">*전화하면 "블로그 보고 왔습니다" 하면 서비스 콜라 줌 (내가 확인함)</p>
-            </div>
+ 
+ <p style="margin-top: 8px; color: #999;">*전화하면 "블로그 보고 왔습니다" 하면 서비스 콜라 줌 (내가 확인함)</p>
+ </div>
 
-            <h2>➕ 신도림 가라오케 FAQ (내가 겪은 기준)</h2>
-            <ul>
-                <li><strong>Q. 24시 하는 곳?</strong> A. 퍼펙트 가라오케, 코인존, 플래티넘. 셋 다 24시. 루나는 새벽 1시 마감.</li>
-                <li><strong>Q. 주차 가능?</strong> A. 퍼펙트는 건물 주차장 (유료). 루나 주차 어려움. 나머지는 대중교통 추천.</li>
-                <li><strong>Q. 기계 최신?</strong> A. 퍼펙트 TJ미디어 최신, 루나 금영 최신. 보컬라운지는 약간 구형.</li>
-                <li><strong>Q. 가격 착한 곳?</strong> A. 코인존 (1곡 500원). 근데 시설은 좀 그래. 퍼펙트 가성비 좋음.</li>
-                <li><strong>Q. 데이트 코스?</strong> A. 보컬라운지 비. 무드등 + 감성. 근데 노래방 기계는 무난.</li>
-            </ul>
+ <h2>➕ 신도림 가라오케 FAQ (내가 겪은 기준)</h2>
+ <ul>
+ <li><strong>Q. 24시 하는 곳?</strong> A. 퍼펙트 가라오케, 코인존, 플래티넘. 셋 다 24시. 루나는 새벽 1시 마감.</li>
+ <li><strong>Q. 주차 가능?</strong> A. 퍼펙트는 건물 주차장 (유료). 루나 주차 어려움. 나머지는 대중교통 추천.</li>
+ <li><strong>Q. 기계 최신?</strong> A. 퍼펙트 TJ미디어 최신, 루나 금영 최신. 보컬라운지는 약간 구형.</li>
+ <li><strong>Q. 가격 착한 곳?</strong> A. 코인존 (1곡 500원). 근데 시설은 좀 그래. 퍼펙트 가성비 좋음.</li>
+ <li><strong>Q. 데이트 코스?</strong> A. 보컬라운지 비. 무드등 + 감성. 근데 노래방 기계는 무난.</li>
+ </ul>
 
-            <p style="margin-top: 40px;">🔥 <strong>신도림 가라오케 TOP5</strong> 리스트는 계속 업데이트 됨. 형이 또 새로운 곳 가면 후기 남길게. 다들 핫플에서 신나게 노래 부르고, 맛있는 야식 먹자. (참고: 퍼펙트 근처에 치킨집 많음)</p>
+ <p style="margin-top: 40px;">🔥 <strong>신도림 가라오케 TOP5</strong> 리스트는 계속 업데이트 됨. 형이 또 새로운 곳 가면 후기 남길게. 다들 핫플에서 신나게 노래 부르고, 맛있는 야식 먹자. (참고: 퍼펙트 근처에 치킨집 많음)</p>
 
-            <div class="footnote">
-                <span>© 2025 신도림가라오케TOP5 · 브루탈리즘 + 네온 보이드</span>
-            </div>
-        </main>
-    </div>
+ <div class="footnote">
+ <span>© 2025 신도림가라오케TOP5 · 브루탈리즘 + 네온 보이드</span>
+ </div>
+ </main>
+ </div>
 </body>
 </html>
